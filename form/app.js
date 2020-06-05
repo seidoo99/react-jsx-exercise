@@ -1,5 +1,5 @@
 let TextInput = () => {
-    return <span>Make this component render a styled text input tag</span>
+    return <span></span>
 }
 
 let YesNoRadio = () => {

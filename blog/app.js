@@ -1,16 +1,33 @@
 let Header = () => {
-    return <span>Design a header for your blog</span>
+    return <div className="header">
+    
+    <div className="logo">Logo</div>
+    <ul><li>Home</li>
+    <li>About</li>
+    <li>Contact</li></ul></div>
 }
 let Article = () => {
-    return <span>Write and design your blog article</span>
+    return <span> Write and design your blog article </span>
 }
 let Footer = () => {
-    return <span>Design a footer for your blog</span>
+    return (
+<footer>
+<ul className="footer">
+<li>Home</li>
+<li>about</li>
+<li>contact</li>
+</ul>
+</footer>
+    );
 }
 
 let Blog = () => {
-    return <span>Make this Component render the header, article, and footer</span>
+    return <div>
+    <Header/>
+    <Article/>
+    <Footer/>
+    </div>
 }
 
 
-ReactDOM.render(<Blog />, document.getElementById('root'))
+ReactDOM.render( <Blog /> , document.getElementById('root'))
